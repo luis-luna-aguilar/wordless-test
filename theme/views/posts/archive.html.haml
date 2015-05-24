@@ -1,0 +1,5 @@
+%h2 Archive
+%ul.archive
+  - while (have_posts())
+    - the_post()
+    %li= render_partial("posts/post")
